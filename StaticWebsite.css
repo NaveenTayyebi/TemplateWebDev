@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 20px 0px 30px 0px;
+  width: 100%;
+  z-index: 5;
+}
+.name {
+  font-size: 30px;
+  color: grey;
+  padding: 0 900px 0 40px;
+}
+
+a.about:hover,a.cv:hover, a.contact:hover  {
+  color: white;
+}
+a.about {
+  color: grey;
+  padding: 0 20px;
+}
+a.cv {
+  color: grey;
+  padding: 0 20px;
+}
+a.contact {
+  color: grey;
+  padding: 0 20px;
+}
+.block-one {
+  position: relative;
+  margin: 0px;
+  height: 200px;
+  width: 540px;
+  background-color: black;
+}
+img.equations {
+  position: relative;
+  top: -200px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  object-fit: contain;
+  width: 540px;
+  z-index: 1;
+}
+img.lorentz {
+  position: relative;
+  top: -200px;
+  left: -4px;
+  margin: 0px;
+  padding: 0px;
+  object-fit: contain;
+  width: 900px;
+  z-index: 2;
+  filter: grayscale(100);
+}
+.tint-block {
+  position: relative;
+  bottom: 880px;
+  height: 675px;
+  width: 1440px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 3;
+}
+.big-name {
+  text-align: center;
+  position: relative;
+  bottom: 1250px;
+  left: 530px;
+  font-family: Times;
+  font-size: 50px;
+  color: white;
+  border-top: 1px solid white;
+  padding: 10px 0px;
+  width: 380px;
+  z-index: 3;
+}
+.work-titles {
+  text-align: center;
+  position: relative;
+  bottom: 1260px;
+  left: 530px;
+  font-family: Times;
+  font-size: 20px;
+  color: white;
+  padding: 10px 0px 20px 0px;
+  border-bottom: 1px solid white;
+  width: 380px;
+  z-index: 3;
+}
+.buffer {
+  position: relative;
+  bottom: 1013px;
+  background-color: black;
+  height: 115px;
+  width: 1440px;
+}
+.About {
+  position: relative;
+  background-color: white;
+  bottom: 1020px;
+  height: 850px;
+  width: 1440px;
+  border-top: 10px ridge white;
+  z-index: 3;
+}
+.About h1 {
+  position: relative;
+  font-size: 40px;
+  font-weight: normal;
+  top: 210px;
+  left: 250px;
+  color: white;
+  z-index: 4;
+}
+.About img {
+  position: relative;
+  bottom: 10px;
+  left: 740px;
+  object-fit: contain;
+  height: 600px;
+  border: 7px inset white;
+  z-index: 4;
+}
+.About p {
+  white-space: normal;
+  text-align: justify;
+  position: relative;
+  left: 250px;
+  bottom: 410px;
+  width: 400px;
+  color: white;
+  z-index: 4;
+}
+.Text-Panel {
+  position: relative;
+  left: 180px;
+  bottom: 927px;
+  background-color: black;
+  height: 600px;
+  width: 550px;
+  border: 6px inset white;
+  z-index: 3;
+}
+.background-image {
+  position: relative;
+  object-fit: contain;
+  width: 900px;
+  left: 430px;
+  bottom: 270px;
+  z-index: 1;
+  opacity: 0.3;
+}
+.block-image {
+  position: absolute;
+  top: 1646px;
+  object-fit: contain;
+  background-color: black;
+  padding: 20px 0;
+  height: 340px;
+  width: 1440px;
+  opacity: 1;
+  z-index: 1;
+}
+.experience-block {
+  margin: 0 auto;
+  position: relative;
+  bottom: 900px;
+  height: 1300px;
+  width: 1100px;
+  background-color: black;
+  border: 6px inset white;
+}
+.experience-block > h1 {
+  position: relative;
+  top: 30px;
+  left: 80px;
+  font-size: 40px;
+  font-weight: normal;
+  color: white;
+}
+table {
+  position: relative;
+  top: 10px;
+  left: 80px;
+  margin: 60px 0;
+  width: 800px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+table td {
+  padding: 10px 0;
+  font-size: 20px;
+  color: white;
+}
+.role {
+  font-size: 25px;
+}
+.date {
+  font-size: 18px;
+}
+.content {
+}
