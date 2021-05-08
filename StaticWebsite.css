@@ -8,76 +8,63 @@ html, body {
   overflow-x: hidden;
   white-space: nowrap;
 }
-.header {
+#header {
   position: fixed;
   top: 0px;
   left: 0px;
   padding: 20px 0px 30px 0px;
   width: 100%;
   z-index: 5;
+  transition: background-color ease-in 0.07s; 
 }
 .name {
   font-size: 30px;
   color: grey;
   padding: 0 900px 0 40px;
+   transition: color ease-in 0.07s;
 }
 
-a.about:hover,a.cv:hover, a.contact:hover  {
+a.about:hover, a.cv:hover, a.connect:hover  {
   color: white;
 }
 a.about {
   color: grey;
   padding: 0 20px;
+  transition: color ease-in 0.07s;
 }
 a.cv {
   color: grey;
   padding: 0 20px;
+  transition: color ease-in 0.07s;
 }
-a.contact {
+a.connect {
   color: grey;
   padding: 0 20px;
+  transition: color ease-in 0.07s;
 }
-.block-one {
-  position: relative;
-  margin: 0px;
-  height: 200px;
-  width: 540px;
-  background-color: black;
-}
-img.equations {
-  position: relative;
-  top: -200px;
-  left: 0px;
+img.jet-engine {
   margin: 0px;
   padding: 0px;
-  object-fit: contain;
-  width: 540px;
-  z-index: 1;
-}
-img.lorentz {
-  position: relative;
-  top: -200px;
-  left: -4px;
-  margin: 0px;
-  padding: 0px;
-  object-fit: contain;
-  width: 900px;
+  object-fit: cover;
+  overflow: hidden; 
+  height: 800px;
+  width: 1440px;
   z-index: 2;
-  filter: grayscale(100);
+  filter: grayscale(100%);
 }
 .tint-block {
   position: relative;
-  bottom: 880px;
-  height: 675px;
+  bottom: 904px;
+  height: 900px;
   width: 1440px;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.85;
   z-index: 3;
 }
 .big-name {
   text-align: center;
   position: relative;
-  bottom: 1250px;
+  bottom: 1395px;
   left: 530px;
   font-family: Times;
   font-size: 50px;
@@ -90,7 +77,7 @@ img.lorentz {
 .work-titles {
   text-align: center;
   position: relative;
-  bottom: 1260px;
+  bottom: 1410px;
   left: 530px;
   font-family: Times;
   font-size: 20px;
@@ -100,60 +87,79 @@ img.lorentz {
   width: 380px;
   z-index: 3;
 }
-.buffer {
+.tint-back-panel { 
   position: relative;
-  bottom: 1013px;
-  background-color: black;
-  height: 115px;
-  width: 1440px;
-}
+  margin: 0px auto;
+  bottom: 0px;
+  height: 2220px;
+  width: 100%;
+  background-color: hsla(0,0%,9%,0.2);
+  z-index: 2;
+ }
 .About {
   position: relative;
   background-color: white;
-  bottom: 1020px;
-  height: 850px;
+  bottom: 1065px;
+  height: 720px;
   width: 1440px;
-  border-top: 10px ridge white;
   z-index: 3;
 }
-.About h1 {
+ .photo-holder { 
   position: relative;
-  font-size: 40px;
-  font-weight: normal;
-  top: 210px;
-  left: 250px;
-  color: white;
-  z-index: 4;
-}
-.About img {
+  top: -550px;
+  left: 815px;
+  height: 620px;
+  width: 500px;
+  background-color: transparent;
+  z-index: 1;
+  }
+  .photo-holder img {
   position: relative;
-  bottom: 10px;
-  left: 740px;
+  top: 10px;
   object-fit: contain;
   height: 600px;
-  border: 7px inset white;
-  z-index: 4;
+  box-shadow: 5px 5px 5px grey; 
+  z-index: 2; 
+  transition: all .4s ease-in-out;
+ }
+ .photo-holder img:hover {
+  transform: scale(1.02);
+ }
+.Text-Panel {
+  position: relative;
+  margin: 0px ;
+  left: 150px;
+  top: 60px;
+  background-color: black;
+  box-shadow: 5px 5px 5px grey;
+  height: 640px;
+  width: 540px;
+  z-index: 3;
+  transition: all .4s ease-in-out;
 }
-.About p {
+.Text-Panel:hover {
+  transform: scale(1.02);
+}
+.Text-Panel p { 
   white-space: normal;
   text-align: justify;
   position: relative;
-  left: 250px;
-  bottom: 410px;
+  left: 70px;
+  bottom: -130px;
   width: 400px;
   color: white;
   z-index: 4;
 }
-.Text-Panel {
+.Text-Panel h1 { 
   position: relative;
-  left: 180px;
-  bottom: 927px;
-  background-color: black;
-  height: 600px;
-  width: 550px;
-  border: 6px inset white;
-  z-index: 3;
-}
+  font-size: 40px;
+  font-weight: normal;
+  top: 110px;
+  left: 70px;
+  color: white;
+  z-index: 4;
+ }
+
 .background-image {
   position: relative;
   object-fit: contain;
@@ -166,6 +172,7 @@ img.lorentz {
 .block-image {
   position: absolute;
   top: 1646px;
+  margin: 0px ;
   object-fit: contain;
   background-color: black;
   padding: 20px 0;
@@ -174,42 +181,98 @@ img.lorentz {
   opacity: 1;
   z-index: 1;
 }
-.experience-block {
-  margin: 0 auto;
+.wall { 
   position: relative;
-  bottom: 900px;
-  height: 1300px;
+  top: -440px;
+  margin: 0px auto ;
+  height: 550px;
   width: 1100px;
   background-color: black;
-  border: 6px inset white;
-}
-.experience-block > h1 {
+  box-shadow: 5px 5px 5px grey;
+  transition: all .4s ease-in-out;
+ }
+ .wall:hover { 
+  transform: scale(1.02);
+  }
+.wall h1, h3, table { 
   position: relative;
   top: 30px;
-  left: 80px;
-  font-size: 40px;
+  text-align: center;
   font-weight: normal;
   color: white;
 }
-table {
-  position: relative;
-  top: 10px;
-  left: 80px;
-  margin: 60px 0;
-  width: 800px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+.wall  h1 { 
+  font-size: 35px;
 }
-table td {
-  padding: 10px 0;
-  font-size: 20px;
-  color: white;
-}
-.role {
+.wall  h3 { 
   font-size: 25px;
 }
-.date {
-  font-size: 18px;
+.wall table {
+  position: relative;
+  top: 40px;
+  margin: auto;
+  width: 400px;
+  color: white;
 }
-.content {
+.wall .title-table { 
+  height: 45px;
 }
+.wall tr{ 
+  height: 30px;
+}
+.wall button { 
+  position: relative;
+  top: 80px ;
+  left: 138.25px;
+  border-radius: 10%;
+  height: 45px ;
+  width: 155px;
+  border: 1px solid white;
+  font-family: Times;
+  font-size: 15px;
+  color: white;
+  background-color: transparent; 
+}
+.wall button:hover { 
+  color: black;
+  background-color: white;
+ }
+.bord { 
+  position: relative;
+  top: 50px;
+  margin: auto;
+  height: 450px ;
+  width: 450px;
+  border: 1px solid white;
+  background-color: black;
+}
+.secondWall { 
+  position: relative;
+  top: -350px;
+  margin: 0px auto ;
+  height: 550px;
+  width: 1100px;
+  background-color: black;
+  box-shadow: 5px 5px 5px grey;
+  transition: all .4s ease-in-out;
+ }
+ .secondWall:hover { 
+  transform: scale(1.02);
+}
+.secondWall h1 { 
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: normal;
+ }
+ .secondWall img { 
+  position: relative;
+  object-fit: contain;
+  width: 150px;
+  top: 150px;
+  left: 475px;
+}
+
+
