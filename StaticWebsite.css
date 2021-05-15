@@ -23,23 +23,23 @@ html, body {
   padding: 0 900px 0 40px;
    transition: color ease-in 0.07s;
 }
-
 a.about:hover, a.cv:hover, a.connect:hover  {
-  color: white;
+  color: white !important;
+  cursor: pointer;
 }
 a.about {
   color: grey;
-  padding: 0 20px;
+  margin: 0 20px;
   transition: color ease-in 0.07s;
 }
 a.cv {
   color: grey;
-  padding: 0 20px;
+  margin: 0 20px;
   transition: color ease-in 0.07s;
 }
 a.connect {
   color: grey;
-  padding: 0 20px;
+  margin: 0 20px;
   transition: color ease-in 0.07s;
 }
 img.jet-engine {
@@ -120,10 +120,10 @@ img.jet-engine {
   height: 600px;
   box-shadow: 5px 5px 5px grey; 
   z-index: 2; 
-  transition: all .4s ease-in-out;
+  transition: all .2s ease-in-out;
  }
  .photo-holder img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
  }
 .Text-Panel {
   position: relative;
@@ -135,10 +135,10 @@ img.jet-engine {
   height: 640px;
   width: 540px;
   z-index: 3;
-  transition: all .4s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 .Text-Panel:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 .Text-Panel p { 
   white-space: normal;
@@ -181,46 +181,49 @@ img.jet-engine {
   opacity: 1;
   z-index: 1;
 }
-.wall { 
+#wall { 
+  background-image: url("./LaptopImage2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1100px 485px;
   position: relative;
   top: -440px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
-  background-color: black;
+  background-color: rgb(20,20,20);
   box-shadow: 5px 5px 5px grey;
-  transition: all .4s ease-in-out;
+  transition: all .2s ease-in-out;
  }
- .wall:hover { 
-  transform: scale(1.02);
+ #wall:hover { 
+  transform: scale(1.01);
   }
-.wall h1, h3, table { 
+#wall h1, h3, table { 
   position: relative;
   top: 30px;
   text-align: center;
   font-weight: normal;
   color: white;
 }
-.wall  h1 { 
+#wall  h1 { 
   font-size: 35px;
 }
-.wall  h3 { 
+#wall  h3 { 
   font-size: 25px;
 }
-.wall table {
+#wall table {
   position: relative;
   top: 40px;
   margin: auto;
   width: 400px;
   color: white;
 }
-.wall .title-table { 
+#wall .title-table { 
   height: 45px;
 }
-.wall tr{ 
+#wall tr{ 
   height: 30px;
 }
-.wall button { 
+#wall button { 
   position: relative;
   top: 80px ;
   left: 138.25px;
@@ -233,7 +236,7 @@ img.jet-engine {
   color: white;
   background-color: transparent; 
 }
-.wall button:hover { 
+#wall button:hover { 
   color: black;
   background-color: white;
  }
@@ -244,20 +247,21 @@ img.jet-engine {
   height: 450px ;
   width: 450px;
   border: 1px solid white;
-  background-color: black;
+  background-color: rgb(20,20,20);
 }
-.secondWall { 
+div.secondWall { 
   position: relative;
-  top: -350px;
+  top: -770px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
   background-color: black;
   box-shadow: 5px 5px 5px grey;
-  transition: all .4s ease-in-out;
+  transition: all .2s ease-in-out;
  }
- .secondWall:hover { 
-  transform: scale(1.02);
+ div.secondWall:hover { 
+  transform: scale(1.01);
+  z-index: 4;
 }
 .secondWall h1 { 
   position: relative;
@@ -266,13 +270,14 @@ img.jet-engine {
   color: white;
   font-size: 40px;
   font-weight: normal;
+  z-index: 5;
  }
- .secondWall img { 
+.secondWall img { 
   position: relative;
   object-fit: contain;
   width: 150px;
   top: 150px;
   left: 475px;
+  z-index: 5;
 }
-
 
