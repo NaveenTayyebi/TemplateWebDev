@@ -29,5 +29,12 @@
 		$('a.connect').on('click', function (event) { 
 			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
 		});
+		$('#wall button').on('click', function (event) { 
+			$('#wall h1').fadeOut(); 
+			$('#wall h3').fadeOut();
+			$('#wall table').fadeOut();
+			$('#wall button').fadeOut();
+			$('#wall .form').fadeIn(); 
+		}); 
 	}); 
 })(window);

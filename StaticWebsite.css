@@ -224,7 +224,7 @@ img.jet-engine {
 #wall tr{ 
   height: 30px;
 }
-#wall button { 
+#wall button.quote { 
   position: relative;
   top: 80px ;
   left: 138.25px;
@@ -237,7 +237,7 @@ img.jet-engine {
   color: white;
   background-color: transparent; 
 }
-#wall button:hover { 
+#wall button.quote:hover { 
   color: black;
   background-color: white;
  }
@@ -250,7 +250,36 @@ img.jet-engine {
   border: 1px solid white;
   background-color: rgb(20,20,20);
 }
-.secondWall { 
+.bord .form { 
+  position: relative;
+  top: 40px;
+  left: 60px;
+  width: 130px;
+  background-color: red;
+  color: white;
+  display: none;
+ }
+ .bord .form div, input { 
+    width: 330px;
+    padding-top: 10px;
+ }
+ .bord .form textarea.comments { 
+    height: 150px;
+    width: 330px;
+    resize: none; 
+ }
+ .bord .form button.submit { 
+  /*position: relative;*/
+  border-radius: 10%;
+  height: 45px ;
+  width: 155px;
+  border: 1px solid white;
+  font-family: Times;
+  font-size: 15px;
+  color: white;
+  background-color: green; 
+}
+ .secondWall { 
   position: relative;
   top: -370px;
   margin: 0px auto;
@@ -293,4 +322,3 @@ img.jet-engine {
   top: 140px;
   left: 446px;
 }
-
