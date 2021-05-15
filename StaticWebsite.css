@@ -5,8 +5,8 @@ html, body {
   max-width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
   white-space: nowrap;
+  height: 100%;
 }
 #header {
   position: fixed;
@@ -21,7 +21,8 @@ html, body {
   font-size: 30px;
   color: grey;
   padding: 0 900px 0 40px;
-   transition: color ease-in 0.07s;
+  cursor: pointer;
+  transition: color ease-in 0.07s;
 }
 a.about:hover, a.cv:hover, a.connect:hover  {
   color: white !important;
@@ -91,7 +92,7 @@ img.jet-engine {
   position: relative;
   margin: 0px auto;
   bottom: 0px;
-  height: 2220px;
+  height: 2120px;
   width: 100%;
   background-color: hsla(0,0%,9%,0.2);
   z-index: 2;
@@ -249,20 +250,19 @@ img.jet-engine {
   border: 1px solid white;
   background-color: rgb(20,20,20);
 }
-div.secondWall { 
+.secondWall { 
   position: relative;
-  top: -770px;
-  margin: 0px auto ;
+  top: -370px;
+  margin: 0px auto;
   height: 550px;
   width: 1100px;
   background-color: black;
   box-shadow: 5px 5px 5px grey;
   transition: all .2s ease-in-out;
  }
- div.secondWall:hover { 
+ .secondWall:hover { 
   transform: scale(1.01);
-  z-index: 4;
-}
+  } 
 .secondWall h1 { 
   position: relative;
   top: 100px;
@@ -270,14 +270,27 @@ div.secondWall {
   color: white;
   font-size: 40px;
   font-weight: normal;
-  z-index: 5;
  }
-.secondWall img { 
+.secondWall .linkedin { 
   position: relative;
   object-fit: contain;
   width: 150px;
   top: 150px;
-  left: 475px;
-  z-index: 5;
+  left: 200px;
+}
+.secondWall .github { 
+  position: relative;
+  object-fit: contain;
+  width: 150px;
+  top: 150px;
+  left: 323px;
+  filter: invert(100);
+}
+.secondWall .gmail { 
+  position: relative;
+  object-fit: contain;
+  width: 200px;
+  top: 140px;
+  left: 446px;
 }
 

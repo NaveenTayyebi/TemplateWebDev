@@ -1,6 +1,7 @@
 (function (global) { //IIFE 
 
-	document.addEventListener("DOMContentLoaded", function (event) { // same as DOMContentLoaded event listener
+	document.addEventListener("DOMContentLoaded", function (event) { 
+
 		$(window).scroll(function (event) { 
 			if (window.scrollY > 50) { 
 				$('#header').css({backgroundColor: '#ffffff'});
@@ -16,15 +17,17 @@
 				$('a.connect').css({color: 'grey'});
 			}
 		}); 
+		$('.name').on('click', function (event) { 
+			window.scroll({top: 0, left: 0, behavior: 'smooth'}); 
+		}); 
 		$('a.about').on('click', function (event) { 
 			window.scroll({top: 743, left: 0, behavior: 'smooth'});
 		});
 		$('a.cv').on('click', function (event) { 
 			window.scroll({top: 1458, left: 0, behavior: 'smooth'});
 		}); 
-		// TODO: Edit the scroll position
 		$('a.connect').on('click', function (event) { 
-			window.scroll({top: 1858, left: 0, behavior: 'smooth'});
+			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
 		});
 	}); 
 })(window);
