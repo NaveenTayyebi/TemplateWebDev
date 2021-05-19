@@ -30,11 +30,18 @@
 			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
 		});
 		$('#wall button').on('click', function (event) { 
+			console.log($('#wall button.quote').offset()); 
 			$('#wall h1').fadeOut(); 
 			$('#wall h3').fadeOut();
 			$('#wall table').fadeOut();
-			$('#wall button').fadeOut();
-			$('#wall .form').delay(375).fadeIn(); 
-		}); 
+			$('#wall button.quote').fadeOut();
+			$('#wall .form').delay(375).fadeIn();
+
+		});
+		$('#wall .form button.submit').on('click', function (event) { 
+			console.log($('#wall .form button.submit').offset()); 
+
+		});
+
 	}); 
 })(window);

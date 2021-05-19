@@ -260,28 +260,34 @@ img.jet-engine {
   display: none;
   z-index: 1;
  }
- .bord .form div, input { 
+ .bord .form div { 
     width: 330px;
     padding-top: 10px;
  }
+ .bord .form input {
+  margin-top: 2px;
+  height: 25px; 
+  width: 330px;
+  font-size: 15px;
+  }
  .bord .form textarea.comments { 
+    margin-top: 2px;
     height: 140px;
     width: 330px;
     resize: none; 
  }
- #wall .form button.quote { 
-  position: relative;
-  top: 0px;
-  left: -100px;
+ #wall .form button.submit {
+  position: absolute;
+  top: 327px;
+  left: 78px;
   border-radius: 10%;
-  height: 145px ;
+  height: 45px;
   width: 155px;
   border: 1px solid white;
   font-family: Times;
   font-size: 15px;
   color: white;
   background-color: green; 
-  z-index: 10;
 }
  .secondWall { 
   position: relative;
