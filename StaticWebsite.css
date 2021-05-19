@@ -255,29 +255,33 @@ img.jet-engine {
   top: 40px;
   left: 60px;
   width: 130px;
-  background-color: red;
+  background-color: black;
   color: white;
   display: none;
+  z-index: 1;
  }
  .bord .form div, input { 
     width: 330px;
     padding-top: 10px;
  }
  .bord .form textarea.comments { 
-    height: 150px;
+    height: 140px;
     width: 330px;
     resize: none; 
  }
- .bord .form button.submit { 
-  /*position: relative;*/
+ #wall .form button.quote { 
+  position: relative;
+  top: 0px;
+  left: -100px;
   border-radius: 10%;
-  height: 45px ;
+  height: 145px ;
   width: 155px;
   border: 1px solid white;
   font-family: Times;
   font-size: 15px;
   color: white;
   background-color: green; 
+  z-index: 10;
 }
  .secondWall { 
   position: relative;

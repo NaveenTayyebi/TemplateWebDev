@@ -34,7 +34,7 @@
 			$('#wall h3').fadeOut();
 			$('#wall table').fadeOut();
 			$('#wall button').fadeOut();
-			$('#wall .form').fadeIn(); 
+			$('#wall .form').delay(375).fadeIn(); 
 		}); 
 	}); 
 })(window);
