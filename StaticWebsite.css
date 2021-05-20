@@ -261,18 +261,37 @@ img.jet-engine {
  }
  .bord .form div { 
     width: 330px;
-    padding-top: 10px;
+    padding-top: 12px;
  }
  .bord .form input {
   margin-top: 2px;
   height: 25px; 
-  width: 330px;
+  font-family: Times; 
   font-size: 15px;
   }
+.bord .form label.last-name-label { 
+  position: relative;
+  left: 92px;
+}
+.bord .form input.first-name {
+  margin-right: 6px;  
+  width: 156px;
+}  
+
+.bord .form input.last-name {  
+  margin-left: 6px;  
+    width: 156px;
+}
+
+.bord .form .email { 
+    width: 330px;
+ }
  .bord .form textarea.comments { 
     margin-top: 2px;
     height: 150px;
     width: 330px;
+    font-family: Times; 
+    font-size: 15px;
     resize: none; 
  }
  #wall .form button.submit {
@@ -336,64 +355,53 @@ img.jet-engine {
   left: 446px;
 }
 /*Define vars we'll be using*/
-:root { 
-  --brand-success: red;
-  --loader-size: 7em;
-  --check-height: var(--loader-size) / 2;
-  --check-width: var(--check-height) / 2;
-  --check-left: (var(--loader-size) / 6 + var(--loader-size) / 12);
-  --check-thickness: 5px;
-  --check-color: var(--brand-success);
-}
 .form-two {
   position: absolute;
-  top: 165px;
-  left: 165px;
+  top: 125px;
+  left: 175px;
   display: none;
  }
 .circle-loader {
-  margin-bottom: var(--loader-size)/2;
+  margin-bottom: 3.5em;
   border: 3px solid rgba(0, 0, 0, 0.2);
-  border-left-color: var(--check-color);
-  -webkit-animation: loader-spin 1.2s infinite linear;
+  border-left-color: #5cb85c;
+  animation: loader-spin 1.2s infinite linear;
   position: relative;
+  top: -10px;
   display: inline-block;
   vertical-align: top;
   border-radius: 50%;
-  width: var(--loader-size);
-  height: var(--loader-size);
+  width: 6em;
+  height: 6em;
 }
 
 .load-complete {
   -webkit-animation: none;
   animation: none;
-  border-color: var(--check-color);
+  border-color: #5cb85c;
   transition: border 500ms ease-out;
 }
 .checkmark {
-  display: block;
-  
-  &.draw:after {
-    animation-duration: 800ms;
-    animation-timing-function: ease;
-    animation-name: checkmark;
-    transform: scaleX(-1) rotate(135deg);
-  }
-  
-  &:after {
-    opacity: 1;
-    height: var(--check-height);
-    width: var(--check-width);
-    transform-origin: left top;
-    border-right: var(--check-thickness) solid var(--check-color);
-    border-top: var(--check-thickness) solid var(--check-color);
-    content: '';
-    left: var(--check-left);
-    top: var(--check-height);
-    position: absolute;
-  }
+  display: none;
 }
-
+.checkmark.draw:after {
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-name: checkmark;
+  transform: scaleX(-1) rotate(135deg);
+}
+.checkmark:after {
+  opacity: 1;
+  height: 2.8em;
+  width: 1.25em;
+  transform-origin: left top;
+  border-right: 3px solid #5cb85c;
+  border-top: 3px solid #5cb85c;
+  content: "";
+  left: 1.45em;
+  top: 3.1em;
+  position: absolute;
+}
 @keyframes loader-spin {
   0% {
     transform: rotate(0deg);
@@ -402,7 +410,6 @@ img.jet-engine {
     transform: rotate(360deg);
   }
 }
-
 @keyframes checkmark {
   0% {
     height: 0;
@@ -411,19 +418,52 @@ img.jet-engine {
   }
   20% {
     height: 0;
-    width: var(--check-width);
+    width: 1.25em;
     opacity: 1;
   }
   40% {
-    height: var(--check-height);
-    width: var(--check-width);
+    height: 2.8em;
+    width: 1.25em;
     opacity: 1;
   }
   100% {
-    height: var(--check-height);
-    width: var(--check-width);
+    height: 2.8em;
+    width: 1.25em;
     opacity: 1;
   }
 }
-
-
+.form-two div.output-message { 
+  position: absolute;
+  top: 110px;
+  left: -49px;
+  color: white; 
+  font-size: 25px;
+  font-weight: bold;
+  display: none; 
+ }
+ .form-two div.output-message-two {
+  position: absolute; 
+  top: 148px;
+  left: -95px;
+  color: white ;
+  font-size: 15px;
+  display: none; 
+ }
+.form-two button.submit-reset {
+  position: absolute;
+  top: 243px;
+  left: -37px;
+  border-radius: 10%;
+  height: 45px;
+  width: 155px;
+  border: 1px solid white;
+  font-family: Times;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;  
+  display: none;
+}
+.form-two button.submit-reset:hover { 
+  color: black;
+  background-color: white;
+ }

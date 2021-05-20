@@ -29,23 +29,32 @@
 		$('a.connect').on('click', function (event) { 
 			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
 		});
-		$('#wall button').on('click', function (event) {  
+		$('#wall button.quote').on('click', function (event) {  
 			$('#wall h1').fadeOut(); 
 			$('#wall h3').fadeOut();
 			$('#wall table').fadeOut();
 			$('#wall button.quote').fadeOut();
-			$('#wall .form').delay(375).fadeIn();
+			$('#wall .form').delay(475).fadeIn();
 		});
 		$('#wall .form button.submit').on('click', function (event) {
 			$('#wall .form').fadeOut(); 
-			$('.form-two').delay(375).fadeIn();
-			setTimeout(); 
-			$('.checkmark').toggle();
+			$('#wall .form-two').delay(475).fadeIn(); 
+			setTimeout(myFunc, 1500); 
 		});
-		setTimeout(function() {
+		function myFunc () {
 			$('.circle-loader').toggleClass('load-complete');
-		}, 4200);
-
+			$('.checkmark').toggle(); 
+			$('.form-two div.output-message').fadeIn();
+			$('.form-two div.output-message-two').fadeIn();
+			$('.form-two button.submit-reset').fadeIn();
+		}
+		$('#wall .form-two button.submit-reset').on('click', function (event) {
+			$('#wall .form-two').fadeOut(); 
+			$('#wall h1').delay(475).fadeIn(); 
+			$('#wall h3').delay(475).fadeIn();
+			$('#wall table').delay(475).fadeIn();
+			$('#wall button.quote').delay(475).fadeIn();
+		});
 
 	}); 
 })(window);
