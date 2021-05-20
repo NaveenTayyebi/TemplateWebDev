@@ -29,18 +29,18 @@
 		$('a.connect').on('click', function (event) { 
 			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
 		});
-		$('#wall button').on('click', function (event) { 
-			console.log($('#wall button.quote').offset()); 
+		$('#wall button').on('click', function (event) {  
 			$('#wall h1').fadeOut(); 
 			$('#wall h3').fadeOut();
 			$('#wall table').fadeOut();
 			$('#wall button.quote').fadeOut();
 			$('#wall .form').delay(375).fadeIn();
-
 		});
-		$('#wall .form button.submit').on('click', function (event) { 
-			console.log($('#wall .form button.submit').offset()); 
-
+		$('#wall .form button.submit').on('click', function (event) {
+			$('#wall .form').fadeOut(); 
+			$('.form-two').delay(375).fadeIn();  
+  			$('.circle-loader').toggleClass('load-complete');
+  			$('.checkmark').toggle();
 		});
 
 	}); 
