@@ -335,40 +335,43 @@ img.jet-engine {
   top: 140px;
   left: 446px;
 }
-.form-two { 
+/*Define vars we'll be using*/
+:root { 
+  --brand-success: red;
+  --loader-size: 7em;
+  --check-height: var(--loader-size) / 2;
+  --check-width: var(--check-height) / 2;
+  --check-left: (var(--loader-size) / 6 + var(--loader-size) / 12);
+  --check-thickness: 5px;
+  --check-color: var(--brand-success);
+}
+.form-two {
+  position: absolute;
+  top: 165px;
+  left: 165px;
   display: none;
  }
-/*Define vars we'll be using*/
-$brand-success: #5cb85c;
-$loader-size: 7em;
-$check-height: $loader-size/2;
-$check-width: $check-height/2;
-$check-left: ($loader-size/6 + $loader-size/12);
-$check-thickness: 3px;
-$check-color: $brand-success;
-
 .circle-loader {
-  margin-bottom: $loader-size/2;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-left-color: $check-color;
-  animation: loader-spin 1.2s infinite linear;
+  margin-bottom: var(--loader-size)/2;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-left-color: var(--check-color);
+  -webkit-animation: loader-spin 1.2s infinite linear;
   position: relative;
   display: inline-block;
   vertical-align: top;
   border-radius: 50%;
-  width: $loader-size;
-  height: $loader-size;
+  width: var(--loader-size);
+  height: var(--loader-size);
 }
 
 .load-complete {
   -webkit-animation: none;
   animation: none;
-  border-color: $check-color;
+  border-color: var(--check-color);
   transition: border 500ms ease-out;
 }
-
 .checkmark {
-  display: none;
+  display: block;
   
   &.draw:after {
     animation-duration: 800ms;
@@ -379,14 +382,14 @@ $check-color: $brand-success;
   
   &:after {
     opacity: 1;
-    height: $check-height;
-    width: $check-width;
+    height: var(--check-height);
+    width: var(--check-width);
     transform-origin: left top;
-    border-right: $check-thickness solid $check-color;
-    border-top: $check-thickness solid $check-color;
+    border-right: var(--check-thickness) solid var(--check-color);
+    border-top: var(--check-thickness) solid var(--check-color);
     content: '';
-    left: $check-left;
-    top: $check-height;
+    left: var(--check-left);
+    top: var(--check-height);
     position: absolute;
   }
 }
@@ -408,17 +411,19 @@ $check-color: $brand-success;
   }
   20% {
     height: 0;
-    width: $check-width;
+    width: var(--check-width);
     opacity: 1;
   }
   40% {
-    height: $check-height;
-    width: $check-width;
+    height: var(--check-height);
+    width: var(--check-width);
     opacity: 1;
   }
   100% {
-    height: $check-height;
-    width: $check-width;
+    height: var(--check-height);
+    width: var(--check-width);
     opacity: 1;
   }
 }
+
+

@@ -38,10 +38,14 @@
 		});
 		$('#wall .form button.submit').on('click', function (event) {
 			$('#wall .form').fadeOut(); 
-			$('.form-two').delay(375).fadeIn();  
-  			$('.circle-loader').toggleClass('load-complete');
-  			$('.checkmark').toggle();
+			$('.form-two').delay(375).fadeIn();
+			setTimeout(); 
+			$('.checkmark').toggle();
 		});
+		setTimeout(function() {
+			$('.circle-loader').toggleClass('load-complete');
+		}, 4200);
+
 
 	}); 
 })(window);
