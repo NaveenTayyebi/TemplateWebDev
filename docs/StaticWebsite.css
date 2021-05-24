@@ -17,6 +17,7 @@ html, body {
   width: 100%;
   z-index: 5;
   transition: background-color ease-in 0.07s; 
+  width: 100%;
 }
 .name {
   font-size: 30px;
@@ -50,9 +51,10 @@ img.jet-engine {
   object-fit: cover;
   overflow: hidden; 
   height: 800px;
-  width: 1440px;
+  width: 100%;
   z-index: 2;
   filter: grayscale(100%);
+
 }
 .tint-block {
   position: relative;
