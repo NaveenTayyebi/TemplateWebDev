@@ -1,4 +1,1 @@
-docs/jQuery-v3.6.0.js -linguist-vendored
-docs/StaticWebsite.css -linguist-detectable 
-docs/script.js -linguist-detectable 
-docs/index.html -linguist-detectable 
+jQuery-v3.6.0.js -linguist-vendored
