@@ -15,9 +15,9 @@ html, body {
   left: 0px;
   padding: 20px 0px 30px 0px;
   width: 100%;
+  max-width: 100%; 
   z-index: 5;
   transition: background-color ease-in 0.07s; 
-  width: 100%;
 }
 .name {
   font-size: 30px;
@@ -60,7 +60,7 @@ img.jet-engine {
   position: relative;
   bottom: 904px;
   height: 900px;
-  width: 100%;
+  width: 100wh;
   max-width: 100%;
   background-color: black;
   opacity: 0.85;
@@ -94,10 +94,10 @@ img.jet-engine {
 }
 .tint-back-panel { 
   position: relative;
-  margin: 0px auto;
   bottom: 0px;
   height: 2120px;
   width: 100%;
+  max-width: 100%;
   background-color: hsla(0,0%,9%,0.2);
   z-index: 2;
  }
@@ -106,7 +106,7 @@ img.jet-engine {
   background-color: white;
   bottom: 1065px;
   height: 720px;
-  width: 1440px;
+  width: 100%;
   z-index: 3;
 }
  .photo-holder { 
@@ -471,3 +471,5 @@ img.jet-engine {
   color: black;
   background-color: white;
  }
+
+
