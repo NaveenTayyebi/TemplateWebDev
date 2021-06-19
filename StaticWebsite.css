@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+@media screen and (min-width: 1px) {
 html, body {
   max-width: 100%;
   margin: 0px;
@@ -470,3 +471,4 @@ img.jet-engine {
   color: black;
   background-color: white;
  }
+}
