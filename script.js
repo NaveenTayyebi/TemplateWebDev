@@ -29,6 +29,9 @@
 		$('a.connect').on('click', function (event) { 
 			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
 		});
+    $('#third-wall button.edu-button').on('click', function (event) { 
+         window.open("https://www.linkedin.com/in/naveen-tayyebi-49a40945/", "_blank");
+    });
 		$('#wall button.quote').on('click', function (event) {  
 			$('#wall h1').fadeOut(); 
 			$('#wall h3').fadeOut();
