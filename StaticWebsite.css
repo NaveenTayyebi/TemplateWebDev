@@ -95,7 +95,7 @@ img.jet-engine {
 .tint-back-panel { 
   position: relative;
   bottom: 0px;
-  height: 2720px;
+  height: 3370px;
   width: 100%;
   max-width: 100%;
   background-color: hsla(0,0%,9%,0.2);
@@ -216,14 +216,16 @@ img.jet-engine {
   padding-bottom: 133px;
   background-color: rgb(20,20,20);
  }
- #third-wall table tr:nth-child(1) { 
+ #third-wall table tr:nth-child(1) {
+ position: relative;
   font-size: 35px;
   height: 95px;
+  left: 30px;
   }
 #third-wall table tr:nth-child(5), tr:nth-child(9) {
   height: 20px; 
  }
-.foothill-icon { 
+.icon-one { 
   position: absolute; 
   left: 40px;
   bottom: 270px;
@@ -231,7 +233,7 @@ img.jet-engine {
   width: 60px;
   z-index: 3;
  }
- .uci-icon { 
+ .icon-two { 
   position: absolute; 
   left: 40px;
   bottom: 358px;
@@ -239,7 +241,7 @@ img.jet-engine {
   width: 60px;
   z-index: 3;
  }
- .school-icon { 
+ .icon-three { 
   position: absolute; 
   left: 40px;
   bottom: 183px;
@@ -273,7 +275,7 @@ img.jet-engine {
   z-index: 1;
  }
  #fourth-wall {
-  background-image: url("./engineeringSchool.jpeg");
+  background-image: url("./ccsr.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 420px 0px;
@@ -295,17 +297,69 @@ img.jet-engine {
   text-align: left;
   width: 440px;
   padding-top: 30px;
-  padding-left: 115px;
-  padding-bottom: 133px;
+  padding-left: 135px;
+  padding-bottom: 90px;
   background-color: rgb(20,20,20);
+  z-index: 2 ;
  }
  #fourth-wall table tr:nth-child(1) { 
+  position: relative;
   font-size: 35px;
   height: 95px;
+  left: -40px;
   }
-#fourth-wall table tr:nth-child(5), tr:nth-child(9) {
+#fourth-wall table tr:nth-child(5), tr:nth-child(9), tr:nth-child(13) {
   height: 20px; 
  }
+ #fourth-wall .edu-button { 
+  position: absolute; 
+  bottom: 55px;
+  left: 135px; 
+  border-radius: 10%;
+  height: 45px ;
+  width: 155px;
+  border: 1px solid white;
+  font-family: Times;
+  font-size: 15px;
+  color: white;
+  background-color: transparent; 
+  }
+  #fourth-wall .edu-button:hover { 
+  color: black;
+  background-color: white; 
+  }
+  #fourth-wall .icon-one { 
+  position: absolute; 
+  left: 60px;
+  bottom: 270px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #fourth-wall .icon-two { 
+  position: absolute; 
+  left: 60px;
+  bottom: 358px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #fourth-wall .icon-three { 
+  position: absolute; 
+  left: 60px;
+  bottom: 183px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #fourth-wall .icon-four { 
+  position: absolute; 
+  left: 60px;
+  bottom: 93px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+  }
 #wall { 
   background-image: url("./LaptopImage2.jpeg");
   background-repeat: no-repeat;
