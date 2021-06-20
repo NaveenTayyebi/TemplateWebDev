@@ -26,16 +26,47 @@ html, body {
   cursor: pointer;
   transition: color ease-in 0.07s;
 }
-a.about:hover, a.cv:hover, a.connect:hover  {
-  color: white !important;
+table.scroll-anchors { 
+  position: absolute;
+  right: 20px;
+  display: inline; 
+ }
+a.about:hover, a.education:hover, a.work:hover, a.certificates:hover,
+a.volunteer:hover, a.tutoring:hover, a.connect:hover  {
+  color: white ;
   cursor: pointer;
 }
 a.about {
+  position: relative;
   color: grey;
   margin: 0 20px;
   transition: color ease-in 0.07s;
 }
-a.cv {
+a.education {
+  position: relative;
+  color: grey;
+  margin: 0 20px;
+  transition: color ease-in 0.07s;
+}
+a.work {
+  position: relative;
+  color: grey;
+  margin: 0 20px;
+  transition: color ease-in 0.07s;
+}
+a.certificates {
+  position: relative;
+  color: grey;
+  margin: 0 20px;
+  transition: color ease-in 0.07s;
+}
+a.volunteer {
+  position: relative;
+  color: grey;
+  margin: 0 20px;
+  transition: color ease-in 0.07s;
+}
+a.tutoring {
   color: grey;
   margin: 0 20px;
   transition: color ease-in 0.07s;
@@ -54,7 +85,6 @@ img.jet-engine {
   width: 100%;
   z-index: 2;
   filter: grayscale(100%);
-
 }
 .tint-block {
   position: relative;
@@ -95,7 +125,7 @@ img.jet-engine {
 .tint-back-panel { 
   position: relative;
   bottom: 0px;
-  height: 4870px;
+  height: 4670px;
   width: 100%;
   max-width: 100%;
   background-color: hsla(0,0%,9%,0.2);
@@ -111,11 +141,14 @@ img.jet-engine {
 }
 .center-device {  
   background-color: transparent;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
  }
  .photo-holder { 
   position: relative;
   top: -550px;
-  left: 815px;
+  left: 643px;
   height: 620px;
   width: 500px;
   background-color: transparent;
@@ -136,7 +169,7 @@ img.jet-engine {
 .Text-Panel {
   position: relative;
   margin: 0px ;
-  left: 150px;
+  left: 0px;
   top: 60px;
   background-color: black;
   box-shadow: 5px 5px 5px grey;
@@ -167,7 +200,6 @@ img.jet-engine {
   color: white;
   z-index: 4;
  }
-
 .background-image {
   position: relative;
   object-fit: contain;
@@ -360,7 +392,6 @@ img.jet-engine {
   width: 60px;
   z-index: 3;
   }
-
   #fifth-wall {
   background-position: 420px 0px;
   position: relative;
@@ -469,14 +500,12 @@ img.jet-engine {
 #fifth-wall table.two tr:nth-child(5), tr:nth-child(9), tr:nth-child(13) {
   height: 20px; 
  }
-  
-  /*akjsdkajsdkasd*/
-
+/*End Partial Modification*/
 #sixth-wall {
-  background-image: url("./ccsr.jpeg");
+  background-image: url("./book-stack.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 420px 0px;
+  background-position: 320px 0px;
   position: relative;
   top: -170px;
   margin: 0px auto ;
@@ -493,7 +522,7 @@ img.jet-engine {
   position: absolute;
   top: 0px;
   text-align: left;
-  width: 440px;
+  width: 550px;
   padding-top: 30px;
   padding-left: 135px;
   padding-bottom: 109px;
@@ -558,11 +587,24 @@ img.jet-engine {
   width: 60px;
   z-index: 3;
   }
-
-
-
-
-
+#sixth-wall .edu-button { 
+  position: absolute; 
+  bottom: 95px;
+  left: 135px; 
+  border-radius: 10%;
+  height: 45px ;
+  width: 155px;
+  border: 1px solid white;
+  font-family: Times;
+  font-size: 15px;
+  color: white;
+  background-color: transparent; 
+  z-index: 3;
+  }
+  #sixth-wall .edu-button:hover { 
+  color: black;
+  background-color: white; 
+  }
 #wall { 
   background-image: url("./LaptopImage2.jpeg");
   background-repeat: no-repeat;

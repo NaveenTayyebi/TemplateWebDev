@@ -7,14 +7,24 @@
 				$('#header').css({backgroundColor: '#ffffff'});
 				$('.name').css({color: 'black'});
 				$('a.about').css({color: 'black'});
-				$('a.cv').css({color: 'black'});
+				$('a.education').css({color: 'black'});
+        $('a.work').css({color: 'black'});
+        $('a.certificates').css({color: 'black'});
+        $('a.volunteer').css({color: 'black'});
+        $('a.tutoring').css({color: 'black'});
 				$('a.connect').css({color: 'black'});
+        $('a.about:hover, a.education:hover, a.work:hover, a.certificates:hover, '
+         + 'a.volunteer:hover, a.tutoring:hover, a.connect:hover').css({color: 'grey !important'});
 			} else { 
 				$('#header').css({backgroundColor: 'transparent'});
 				$('.name').css({color: 'grey'});
-				$('a.about').css({color: 'grey'});
-				$('a.cv').css({color: 'grey'});
-				$('a.connect').css({color: 'grey'});
+        $('a.about').css({color: 'grey'});
+        $('a.education').css({color: 'grey'});
+        $('a.work').css({color: 'grey'});
+        $('a.certificates').css({color: 'grey'});
+        $('a.volunteer').css({color: 'grey'});
+        $('a.tutoring').css({color: 'grey'});
+        $('a.connect').css({color: 'grey'});
 			}
 		}); 
 		$('.name').on('click', function (event) { 
@@ -29,7 +39,7 @@
 		$('a.connect').on('click', function (event) { 
 			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
 		});
-    $('#third-wall button.edu-button').on('click', function (event) { 
+    $('button.edu-button').on('click', function (event) { 
          window.open("https://www.linkedin.com/in/naveen-tayyebi-49a40945/", "_blank");
     });
 		$('#wall button.quote').on('click', function (event) {  
