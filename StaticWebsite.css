@@ -95,7 +95,7 @@ img.jet-engine {
 .tint-back-panel { 
   position: relative;
   bottom: 0px;
-  height: 3370px;
+  height: 4070px;
   width: 100%;
   max-width: 100%;
   background-color: hsla(0,0%,9%,0.2);
@@ -360,12 +360,99 @@ img.jet-engine {
   width: 60px;
   z-index: 3;
   }
+
+  #fifth-wall {
+  background-image: url("./ccsr.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 420px 0px;
+  position: relative;
+  top: -260px;
+  margin: 0px auto ;
+  height: 550px;
+  width: 1100px;
+  background-color: rgb(20,20,20);
+  box-shadow: 5px 5px 5px grey;
+  transition: all .2s ease-in-out;
+} 
+#fifth-wall:hover { 
+  transform: scale(1.01);
+  }
+#fifth-wall table { 
+  position: absolute;
+  top: 0px;
+  text-align: left;
+  width: 440px;
+  padding-top: 30px;
+  padding-left: 135px;
+  padding-bottom: 90px;
+  background-color: rgb(20,20,20);
+  z-index: 2 ;
+ }
+ #fifth-wall table tr:nth-child(1) { 
+  position: relative;
+  font-size: 35px;
+  height: 95px;
+  left: -40px;
+  }
+#fifth-wall table tr:nth-child(5), tr:nth-child(9), tr:nth-child(13) {
+  height: 20px; 
+ }
+ #fifth-wall .edu-button { 
+  position: absolute; 
+  bottom: 55px;
+  left: 135px; 
+  border-radius: 10%;
+  height: 45px ;
+  width: 155px;
+  border: 1px solid white;
+  font-family: Times;
+  font-size: 15px;
+  color: white;
+  background-color: transparent; 
+  }
+  #fifth-wall .edu-button:hover { 
+  color: black;
+  background-color: white; 
+  }
+  #fifth-wall .icon-one { 
+  position: absolute; 
+  left: 60px;
+  bottom: 270px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #fifth-wall .icon-two { 
+  position: absolute; 
+  left: 60px;
+  bottom: 358px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #fifth-wall .icon-three { 
+  position: absolute; 
+  left: 60px;
+  bottom: 183px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #fifth-wall .icon-four { 
+  position: absolute; 
+  left: 60px;
+  bottom: 93px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+  }
 #wall { 
   background-image: url("./LaptopImage2.jpeg");
   background-repeat: no-repeat;
   background-size: 1100px 485px;
   position: relative;
-  top: -260px;
+  top: -170px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
@@ -491,7 +578,7 @@ img.jet-engine {
  }
  .secondWall { 
   position: relative;
-  top: -190px;
+  top: -100px;
   margin: 0px auto;
   height: 550px;
   width: 1100px;
