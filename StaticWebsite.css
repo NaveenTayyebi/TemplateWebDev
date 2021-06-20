@@ -95,7 +95,7 @@ img.jet-engine {
 .tint-back-panel { 
   position: relative;
   bottom: 0px;
-  height: 4070px;
+  height: 4870px;
   width: 100%;
   max-width: 100%;
   background-color: hsla(0,0%,9%,0.2);
@@ -455,7 +455,7 @@ img.jet-engine {
   width: 550px;
   padding-top: 30px;
   padding-left: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 36px;
   
   background-color: rgb(20,20,20);
   z-index: 2 ;
@@ -472,12 +472,103 @@ img.jet-engine {
   
   /*akjsdkajsdkasd*/
 
+#sixth-wall {
+  background-image: url("./ccsr.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 420px 0px;
+  position: relative;
+  top: -170px;
+  margin: 0px auto ;
+  height: 550px;
+  width: 1100px;
+  background-color: rgb(20,20,20);
+  box-shadow: 5px 5px 5px grey;
+  transition: all .2s ease-in-out;
+} 
+#sixth-wall:hover { 
+  transform: scale(1.01);
+  }
+#sixth-wall table { 
+  position: absolute;
+  top: 0px;
+  text-align: left;
+  width: 440px;
+  padding-top: 30px;
+  padding-left: 135px;
+  padding-bottom: 90px;
+  background-color: rgb(20,20,20);
+  z-index: 2 ;
+ }
+ #sixth-wall table tr:nth-child(1) { 
+  position: relative;
+  font-size: 35px;
+  height: 95px;
+  left: -40px;
+  }
+#sixth-wall table tr:nth-child(5), tr:nth-child(9), tr:nth-child(13) {
+  height: 20px; 
+ }
+ #sixth-wall .edu-button { 
+  position: absolute; 
+  bottom: 55px;
+  left: 135px; 
+  border-radius: 10%;
+  height: 45px ;
+  width: 155px;
+  border: 1px solid white;
+  font-family: Times;
+  font-size: 15px;
+  color: white;
+  background-color: transparent; 
+  }
+  #sixth-wall .edu-button:hover { 
+  color: black;
+  background-color: white; 
+  }
+  #sixth-wall .icon-one { 
+  position: absolute; 
+  left: 60px;
+  bottom: 270px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #sixth-wall .icon-two { 
+  position: absolute; 
+  left: 60px;
+  bottom: 358px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #sixth-wall .icon-three { 
+  position: absolute; 
+  left: 60px;
+  bottom: 183px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+ }
+ #sixth-wall .icon-four { 
+  position: absolute; 
+  left: 60px;
+  bottom: 93px;
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+  }
+
+
+
+
+
 #wall { 
   background-image: url("./LaptopImage2.jpeg");
   background-repeat: no-repeat;
   background-size: 1100px 485px;
   position: relative;
-  top: -170px;
+  top: -80px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
@@ -603,7 +694,7 @@ img.jet-engine {
  }
  .secondWall { 
   position: relative;
-  top: -100px;
+  top: -20px;
   margin: 0px auto;
   height: 550px;
   width: 1100px;
