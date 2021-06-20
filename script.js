@@ -1,7 +1,6 @@
 (function (global) { //IIFE 
 
 	document.addEventListener("DOMContentLoaded", function (event) { 
-
 		$(window).scroll(function (event) { 
 			if (window.scrollY > 70) { 
 				$('#header').css({backgroundColor: '#ffffff'});
@@ -13,8 +12,6 @@
         $('a.volunteer').css({color: 'black'});
         $('a.tutoring').css({color: 'black'});
 				$('a.connect').css({color: 'black'});
-        $('a.about:hover, a.education:hover, a.work:hover, a.certificates:hover, '
-         + 'a.volunteer:hover, a.tutoring:hover, a.connect:hover').css({color: 'grey'});
 			} else { 
 				$('#header').css({backgroundColor: 'transparent'});
 				$('.name').css({color: 'grey'});
@@ -25,9 +22,7 @@
         $('a.volunteer').css({color: 'grey'});
         $('a.tutoring').css({color: 'grey'});
         $('a.connect').css({color: 'grey'});
-        $('a.about:hover, a.education:hover, a.work:hover, a.certificates:hover, '
-         + 'a.volunteer:hover, a.tutoring:hover, a.connect:hover').css({color: 'white'});
-			}
+			}  
 		}); 
 		$('.name').on('click', function (event) { 
 			window.scroll({top: 0, left: 0, behavior: 'smooth'}); 
@@ -55,6 +50,7 @@
 			$('#wall .form').fadeOut(); 
 			$('#wall .form-two').delay(475).fadeIn(); 
 			setTimeout(myFunc, 1500); 
+      // Send info
 		});
 		function myFunc () {
 			$('.circle-loader').toggleClass('load-complete');
