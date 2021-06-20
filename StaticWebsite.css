@@ -362,9 +362,6 @@ img.jet-engine {
   }
 
   #fifth-wall {
-  background-image: url("./ccsr.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: 420px 0px;
   position: relative;
   top: -260px;
@@ -381,11 +378,12 @@ img.jet-engine {
 #fifth-wall table { 
   position: absolute;
   top: 0px;
-  text-align: left;
+  text-align: left; 
   width: 440px;
   padding-top: 30px;
   padding-left: 135px;
   padding-bottom: 90px;
+  border: 1px solid white;
   background-color: rgb(20,20,20);
   z-index: 2 ;
  }
@@ -447,6 +445,34 @@ img.jet-engine {
   width: 60px;
   z-index: 3;
   }
+
+  /*ajsdhkajshdkjasd*/
+  #fifth-wall table.two { 
+  position: absolute;
+  top: 0px;
+  left: 530px;
+  text-align: left; 
+  width: 440px;
+  padding-top: 30px;
+  padding-left: 135px;
+  padding-bottom: 90px;
+  border: 1px solid white;
+  background-color: rgb(20,20,20);
+  z-index: 2 ;
+ }
+ #fifth-wall table.two tr:nth-child(1) { 
+  position: relative;
+  font-size: 35px;
+  height: 95px;
+  left: -40px;
+  }
+#fifth-wall table.two tr:nth-child(5), tr:nth-child(9), tr:nth-child(13) {
+  height: 20px; 
+ }
+  
+  }
+  /*akjsdkajsdkasd*/
+
 #wall { 
   background-image: url("./LaptopImage2.jpeg");
   background-repeat: no-repeat;
