@@ -226,7 +226,7 @@ img.jet-engine {
   z-index: 1;
 }
 #third-wall {
-  background-image: url("./engineeringSchool.jpeg");
+  background-image: url("images/engineeringSchool.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 420px 0px;
@@ -311,7 +311,7 @@ img.jet-engine {
   z-index: 1;
  }
  #fourth-wall {
-  background-image: url("./ccsr.jpeg");
+  background-image: url("images/ccsr.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 420px 0px;
@@ -506,7 +506,7 @@ img.jet-engine {
  }
 /*End Partial Modification*/
 #sixth-wall {
-  background-image: url("./book-stack.jpeg");
+  background-image: url("images/book-stack.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 320px 0px;
@@ -610,7 +610,7 @@ img.jet-engine {
   background-color: white; 
   }
 #wall { 
-  background-image: url("./LaptopImage2.jpeg");
+  background-image: url("images/LaptopImage2.jpeg");
   background-repeat: no-repeat;
   background-size: 1100px 485px;
   position: relative;
