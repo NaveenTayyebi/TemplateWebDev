@@ -30,12 +30,24 @@
 		$('a.about').on('click', function (event) { 
 			window.scroll({top: 743, left: 0, behavior: 'smooth'});
 		});
-		$('a.cv').on('click', function (event) { 
-			window.scroll({top: 1458, left: 0, behavior: 'smooth'});
+		$('a.education').on('click', function (event) { 
+			window.scroll({top: 1460, left: 0, behavior: 'smooth'});
 		}); 
-		$('a.connect').on('click', function (event) { 
-			window.scroll({top: 2105, left: 0, behavior: 'smooth'});
+		$('a.work').on('click', function (event) { 
+			window.scroll({top: 2098, left: 0, behavior: 'smooth'});
 		});
+    $('a.certificates').on('click', function (event) { 
+      window.scroll({top: 2740, left: 0, behavior: 'smooth'});
+    });
+    $('a.volunteer').on('click', function (event) { 
+      window.scroll({top: 3378, left: 0, behavior: 'smooth'});
+    });
+    $('a.tutoring').on('click', function (event) { 
+      window.scroll({top: 4018, left: 0, behavior: 'smooth'});
+    });
+    $('a.connect').on('click', function (event) { 
+      window.scroll({top: 4656, left: 0, behavior: 'smooth'});
+    });
     $('button.edu-button').on('click', function (event) { 
          window.open("https://www.linkedin.com/in/naveen-tayyebi-49a40945/", "_blank");
     });
