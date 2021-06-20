@@ -33,7 +33,7 @@ table.scroll-anchors {
  }
 a.about:hover, a.education:hover, a.work:hover, a.certificates:hover,
 a.volunteer:hover, a.tutoring:hover, a.connect:hover  {
-  color: white ;
+  color: white;
   cursor: pointer;
 }
 a.about {

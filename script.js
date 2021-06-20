@@ -3,7 +3,7 @@
 	document.addEventListener("DOMContentLoaded", function (event) { 
 
 		$(window).scroll(function (event) { 
-			if (window.scrollY > 50) { 
+			if (window.scrollY > 70) { 
 				$('#header').css({backgroundColor: '#ffffff'});
 				$('.name').css({color: 'black'});
 				$('a.about').css({color: 'black'});
@@ -14,7 +14,7 @@
         $('a.tutoring').css({color: 'black'});
 				$('a.connect').css({color: 'black'});
         $('a.about:hover, a.education:hover, a.work:hover, a.certificates:hover, '
-         + 'a.volunteer:hover, a.tutoring:hover, a.connect:hover').css({color: 'grey !important'});
+         + 'a.volunteer:hover, a.tutoring:hover, a.connect:hover').css({color: 'grey'});
 			} else { 
 				$('#header').css({backgroundColor: 'transparent'});
 				$('.name').css({color: 'grey'});
@@ -25,6 +25,8 @@
         $('a.volunteer').css({color: 'grey'});
         $('a.tutoring').css({color: 'grey'});
         $('a.connect').css({color: 'grey'});
+        $('a.about:hover, a.education:hover, a.work:hover, a.certificates:hover, '
+         + 'a.volunteer:hover, a.tutoring:hover, a.connect:hover').css({color: 'white'});
 			}
 		}); 
 		$('.name').on('click', function (event) { 
