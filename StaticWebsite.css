@@ -92,7 +92,7 @@ img.jet-engine {
   position: relative;
   bottom: 904px;
   height: 900px;
-  width: 100wh;
+  width: 100%;
   max-width: 100%;
   background-color: black;
   opacity: 0.85;
