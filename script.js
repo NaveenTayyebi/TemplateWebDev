@@ -1,6 +1,6 @@
 (function (global) { //IIFE 
-
 	document.addEventListener("DOMContentLoaded", function (event) { 
+    
 		$(window).scroll(function (event) { 
 			if (window.scrollY > 70) { 
 				$('#header').css({backgroundColor: '#ffffff'});
@@ -49,8 +49,7 @@
 		$('#wall .form button.submit').on('click', function (event) {
 			$('#wall .form').fadeOut(); 
 			$('#wall .form-two').delay(475).fadeIn(); 
-			setTimeout(myFunc, 1500); 
-      // Send info
+			setTimeout(myFunc, 1500);
 		});
 		function myFunc () {
 			$('.circle-loader').toggleClass('load-complete');
@@ -66,6 +65,23 @@
 			$('#wall table').delay(475).fadeIn();
 			$('#wall button.quote').delay(475).fadeIn();
 		});
-
+    function getInput(classTag) { 
+      var val = $(classTag).value;
+      console.log(val);
+    }
+    var mandrill = require('node-mandrill')('5JvGfteVplsTn0CK-6QS-K_F');
+    function sendEmail ( _name, _email, _subject, _message) {
+    mandrill('/messages/send', {
+        message: {
+            to: [{email: _email , name: _name}],
+            from_email: 'noreply@yourdomain.com',
+            subject: _subject,
+            text: _message
+        }
+    }, function(error, response){
+        if (error) console.log( error );
+        else console.log(response);
+    });
+  }
 	}); 
 })(window);

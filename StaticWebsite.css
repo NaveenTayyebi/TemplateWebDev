@@ -31,8 +31,7 @@ table.scroll-anchors {
   right: 20px;
   display: inline; 
  }
-table a.about:hover, a.education:hover, a.work:hover, a.certificates:hover, 
-  a.volunteer:hover, a.tutoring:hover, a.connect:hover {
+table.scroll-anchors a:hover{
   color: white;
   cursor: pointer;
 }
