@@ -421,7 +421,6 @@ a.connect {
   margin: auto;
   height: 450px ;
   width: 900px;
-  border: 1px solid white;
   background-color: transparent;
 }
 .bord .form { 
@@ -487,49 +486,27 @@ a.connect {
   color: black;
   background-color: white;
  }
- .secondWall { 
-  display: none;
+#wall .linkedin { 
   position: relative;
-  top: -20px;
-  margin: 0px auto;
-  height: 550px;
-  width: 1100px;
-  background-color: black;
-  box-shadow: 5px 5px 5px grey;
-  transition: all .2s ease-in-out;
- }
- .secondWall:hover { 
-  transform: scale(1.01);
-  } 
-.secondWall h1 { 
-  position: relative;
+  object-fit: contain;
+  width: 150px;
   top: 100px;
-  text-align: center;
-  color: white;
-  font-size: 40px;
-  font-weight: normal;
- }
-.secondWall .linkedin { 
-  position: relative;
-  object-fit: contain;
-  width: 150px;
-  top: 150px;
-  left: 200px;
+  left: 100px;
 }
-.secondWall .github { 
+#wall .github { 
   position: relative;
   object-fit: contain;
   width: 150px;
-  top: 150px;
-  left: 323px;
+  top: 100px;
+  left: 223px;
   filter: invert(100);
 }
-.secondWall .gmail { 
+#wall .gmail { 
   position: relative;
   object-fit: contain;
   width: 200px;
-  top: 140px;
-  left: 446px;
+  top: 90px;
+  left: 346px;
 }
 /*Define vars we'll be using*/
 .form-two {
