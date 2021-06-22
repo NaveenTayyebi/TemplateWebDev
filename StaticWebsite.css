@@ -275,11 +275,10 @@ a.connect {
   background-attachment: fixed; 
   background-size: cover; 
   position: absolute;
-  top: 1650px;
+  top: 0px;
   height: 1410px;
   width: 100%;
   max-width: 100%;
-
 }
 .third-block {
   position: absolute;
