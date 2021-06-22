@@ -276,7 +276,7 @@ a.connect {
 } 
 .third-block table { 
   position: absolute;
-  top: -220px;
+  top: -250px;
   left: 240px;
   text-align: left;
   width: 940px;
@@ -291,39 +291,46 @@ a.connect {
  position: relative;
   font-size: 40px;
   height: 125px;
-  left: 220px;
+  left: 217px;
   }
 .third-block table tr:nth-child(5), tr:nth-child(9), tr:nth-child(13)  {
   height: 20px; 
 }
+.third-block .job-title { 
+  padding-bottom: 35px;
+  line-height: 23px;
+ }
+.third-block .description { 
+  padding-left: 40px;
+ }
 .third-block .icon-one { 
   position: absolute; 
-  left: 90px;
-  bottom: 677px;
+  left: 280px;
+  bottom: 695px;
   height: 60px;
   width: 60px;
   z-index: 3;
  }
 .third-block .icon-two { 
   position: absolute; 
-  left: 90px;
-  bottom: 765px;
+  left: 280px;
+  bottom: 787px;
   height: 60px;
   width: 60px;
   z-index: 3;
  }
  .third-block .icon-three { 
   position: absolute; 
-  left: 90px;
-  bottom: 590px;
+  left: 280px;
+  bottom: 555px;
   height: 60px;
   width: 60px;
   z-index: 3;
  }
   .third-block .icon-four { 
   position: absolute; 
-  left: 90px;
-  bottom: 500px;
+  left: 280px;
+  bottom: 420px;
   height: 60px;
   width: 60px;
   z-index: 3;
