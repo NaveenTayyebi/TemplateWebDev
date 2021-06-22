@@ -77,23 +77,31 @@
 			$('#wall table').delay(475).fadeIn();
 			$('#wall button.quote').delay(475).fadeIn();
 		});
-    function getInput(classTag) { 
-      var val = $(classTag).value;
-      console.log(val);
-    }
-    var mandrill = require('node-mandrill')('5JvGfteVplsTn0CK-6QS-K_F');
-    function sendEmail ( _name, _email, _subject, _message) {
-    mandrill('/messages/send', {
-        message: {
-            to: [{email: _email , name: _name}],
-            from_email: 'noreply@yourdomain.com',
-            subject: _subject,
-            text: _message
-        }
-    }, function(error, response){
-        if (error) console.log( error );
-        else console.log(response);
-    });
-  }
+    var velocity = 0.5;
+    function update(){ 
+    var pos = $(window).scrollTop()+3450; 
+    $('.rocket-engine').each(function() { 
+        var $element = $(this);
+        // subtract some from the height b/c of the padding
+        var height = $element.height()-18;
+        $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) +  'px'); 
+       }); 
+       }; 
+    $(window).bind('scroll', update);
+
+  //   var mandrill = require('node-mandrill')('5JvGfteVplsTn0CK-6QS-K_F');
+  //   function sendEmail ( _name, _email, _subject, _message) {
+  //   mandrill('/messages/send', {
+  //       message: {
+  //           to: [{email: _email , name: _name}],
+  //           from_email: 'noreply@yourdomain.com',
+  //           subject: _subject,
+  //           text: _message
+  //       }
+  //   }, function(error, response){
+  //       if (error) console.log( error );
+  //       else console.log(response);
+  //   });
+  // }
 	}); 
 })(window);
