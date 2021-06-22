@@ -2,7 +2,7 @@
 	document.addEventListener("DOMContentLoaded", function (event) { 
     
 		$(window).scroll(function (event) { 
-			if (window.scrollY > 70) { 
+			if (window.scrollY > 680) { 
 				$('#header').css({backgroundColor: '#ffffff'});
 				$('.name').css({color: 'black'});
 				$('a.about').css({color: 'black'});

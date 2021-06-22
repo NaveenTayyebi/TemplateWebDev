@@ -83,7 +83,7 @@ a.connect {
 }
 .tint-block {
   position: absolute;
-  height: 900px;
+  height: 800px;
   width: 100%;
   max-width: 100%;
   background-color: black;
@@ -95,9 +95,9 @@ a.connect {
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover; 
+  background-position: 0px -110px;
   margin: 0px;
   padding: 0px;
-  /*object-fit: cover;*/
   overflow: hidden; 
   height: 800px;
   width: 100%;
@@ -109,7 +109,7 @@ a.connect {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: -1385px;
+  top: -480px;
   font-family: Times;
   font-size: 50px;
   color: white;
@@ -123,7 +123,7 @@ a.connect {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  top: -1400px;
+  top: -495px;
   font-family: Times;
   font-size: 20px;
   color: white;
@@ -135,7 +135,7 @@ a.connect {
 .first-block {  
   position: absolute;
   top: 800px;
-  background-color: rgb(20,20,20);
+  background-color: rgb(30,30,30);
   height: 850px;
   width: 100%;
   margin: 0 auto;
