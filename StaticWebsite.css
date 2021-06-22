@@ -90,20 +90,6 @@ a.connect {
   opacity: 0.85;
   z-index: 2;
 }
-.jet-engine {
-  background-image: url("images/UseForWebsite.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: cover; 
-  background-position: 0px -110px;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden; 
-  height: 800px;
-  width: 100%;
-  filter: grayscale(100%);
-  z-index: 1;
-}
 .rocket-engine {
   background-image: url("rocketIMG.jpeg");
   background-repeat: no-repeat;
@@ -210,7 +196,7 @@ a.connect {
   display: inline-block;
   position: relative;
   top: 100px;
-  left: 920px;
+  left: 480px;
   border: 1px solid black;
   width: 440px;
   padding-top: 30px;
@@ -282,12 +268,13 @@ a.connect {
  }
 .third-block {
   position: absolute;
-  top: 3455px;
+  top: 2355px;
   margin: 0px auto;
-  height: 705px;
+  height: 757px;
   width: 100%;
-  background-color: rgb(40,40,40); 
-  z-index: 3;
+  background-color: black;
+  opacity: 0.85; 
+  z-index: 1;
 } 
 .third-block table { 
   position: absolute;
