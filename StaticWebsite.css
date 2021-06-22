@@ -272,27 +272,26 @@ a.connect {
   width: 100%;
   background-color: black;
   opacity: 0.85; 
-  z-index: 1;
+  z-index: 3;
 } 
 .third-block table { 
   position: absolute;
-  top: -200px;
-  left: 50px;
+  top: -220px;
+  left: 240px;
   text-align: left;
-  width: 440px;
+  width: 940px;
   padding-top: 30px;
   padding-left: 115px;
   padding-bottom: 90px;
-  background-color: rgb(200,200,200);
-  color: black;
-  border: 1px solid black ;
-  z-index: 5;
+  background-color: transparent;
+  color: white;
+  z-index: 3;
  }
 .third-block table tr:nth-child(1) {
  position: relative;
-  font-size: 35px;
-  height: 95px;
-  left: -25px;
+  font-size: 40px;
+  height: 125px;
+  left: 220px;
   }
 .third-block table tr:nth-child(5), tr:nth-child(9), tr:nth-child(13)  {
   height: 20px; 
@@ -300,7 +299,7 @@ a.connect {
 .third-block .icon-one { 
   position: absolute; 
   left: 90px;
-  bottom: 327px;
+  bottom: 677px;
   height: 60px;
   width: 60px;
   z-index: 3;
@@ -308,7 +307,7 @@ a.connect {
 .third-block .icon-two { 
   position: absolute; 
   left: 90px;
-  bottom: 415px;
+  bottom: 765px;
   height: 60px;
   width: 60px;
   z-index: 3;
@@ -316,7 +315,7 @@ a.connect {
  .third-block .icon-three { 
   position: absolute; 
   left: 90px;
-  bottom: 240px;
+  bottom: 590px;
   height: 60px;
   width: 60px;
   z-index: 3;
@@ -324,7 +323,7 @@ a.connect {
   .third-block .icon-four { 
   position: absolute; 
   left: 90px;
-  bottom: 150px;
+  bottom: 500px;
   height: 60px;
   width: 60px;
   z-index: 3;
