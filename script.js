@@ -28,7 +28,7 @@
 			window.scroll({top: 0, left: 0, behavior: 'smooth'}); 
 		}); 
 		$('a.about').on('click', function (event) { 
-			window.scroll({top: 743, left: 0, behavior: 'smooth'});
+			window.scroll({top: 780, left: 0, behavior: 'smooth'});
 		});
 		$('a.education').on('click', function (event) { 
 			window.scroll({top: 1460, left: 0, behavior: 'smooth'});
