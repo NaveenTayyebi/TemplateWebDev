@@ -3,6 +3,7 @@
 }
 @media (min-width: 1200px) {  
 html, body {
+  position: relative;
   max-width: 100%;
   margin: 0px;
   padding: 0px;
@@ -127,64 +128,22 @@ img.jet-engine {
   width: 380px;
   z-index: 3;
 }
-.tint-back-panel { 
-  position: relative;
-  bottom: 0px;
-  height: 4670px;
+.first-block {  
+  position: absolute;
+  top: 800px;
+  background-color: rgb(20,20,20);
   width: 100%;
-  max-width: 100%;
-  background-color: hsla(0,0%,9%,0.2);
-  z-index: 2;
+  margin: 0 auto;
  }
-.About {
+ .Text-Panel {
+  display: inline-block;
+  vertical-align: top; 
   position: relative;
-  background-color: white;
-  bottom: 1065px;
-  height: 720px;
-  width: 100%;
-  z-index: 3;
-}
-.center-device {  
-  background-color: transparent;
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
- }
- .photo-holder { 
-  position: relative;
-  top: -550px;
-  left: 643px;
-  height: 620px;
-  width: 500px;
-  background-color: transparent;
-  z-index: 1;
-  }
-  .photo-holder img {
-  position: relative;
-  top: 10px;
-  object-fit: contain;
-  height: 600px;
-  box-shadow: 5px 5px 5px grey; 
-  z-index: 2; 
-  transition: all .2s ease-in-out;
- }
- .photo-holder img:hover {
-  transform: scale(1.01);
- }
-.Text-Panel {
-  position: relative;
-  margin: 0px ;
-  left: 0px;
-  top: 60px;
-  background-color: black;
-  box-shadow: 5px 5px 5px grey;
+  margin: 100px 50px 50px 150px;
   height: 640px;
   width: 540px;
-  z-index: 3;
-  transition: all .2s ease-in-out;
-}
-.Text-Panel:hover {
-  transform: scale(1.01);
+  border: 1px solid white;
+  background-color: transparent;
 }
 .Text-Panel p { 
   white-space: normal;
@@ -205,45 +164,34 @@ img.jet-engine {
   color: white;
   z-index: 4;
  }
-.background-image {
+.photo-holder { 
+  display: inline-block;
+  vertical-align: top;
   position: relative;
+  margin: 100px 50px 50px 75px;
+  height: 620px;
+  width: 500px;
+  background-color: transparent;
+  }
+.photo-holder img {
+  position: relative;
+  top: 10px;
+  height: 600px;
   object-fit: contain;
-  width: 900px;
-  left: 430px;
-  bottom: 270px;
-  z-index: 1;
-  opacity: 0.3;
-}
-.block-image {
-  position: absolute;
-  top: 1646px;
-  margin: 0px ;
-  object-fit: contain;
-  background-color: black;
-  padding: 20px 0;
-  height: 340px;
-  width: 1440px;
-  opacity: 1;
-  z-index: 1;
-}
-#third-wall {
+ }
+.second-block {
   background-image: url("images/engineeringSchool.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 420px 0px;
-  position: relative;
-  top: -440px;
-  margin: 0px auto ;
+  position: absolute;
+  top: 1590px;
+  margin: 0px auto;
   height: 550px;
-  width: 1100px;
-  background-color: rgb(20,20,20);
+  width: 100%;
   box-shadow: 5px 5px 5px grey;
-  transition: all .2s ease-in-out;
 } 
-#third-wall:hover { 
-  transform: scale(1.01);
-  }
-#third-wall table { 
+.second-block table { 
   position: absolute;
   top: 0px;
   text-align: left;
@@ -253,13 +201,13 @@ img.jet-engine {
   padding-bottom: 133px;
   background-color: rgb(20,20,20);
  }
- #third-wall table tr:nth-child(1) {
+ .second-block table tr:nth-child(1) {
  position: relative;
   font-size: 35px;
   height: 95px;
   left: 30px;
   }
-#third-wall table tr:nth-child(5), tr:nth-child(9) {
+  .second-block table tr:nth-child(5), tr:nth-child(9) {
   height: 20px; 
  }
 .icon-one { 
@@ -317,7 +265,7 @@ img.jet-engine {
   background-size: contain;
   background-position: 420px 0px;
   position: relative;
-  top: -350px;
+  top: 350px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
@@ -400,7 +348,7 @@ img.jet-engine {
   #fifth-wall {
   background-position: 420px 0px;
   position: relative;
-  top: -260px;
+  top: 160px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
