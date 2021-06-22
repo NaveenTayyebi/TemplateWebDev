@@ -190,7 +190,9 @@ a.connect {
   margin: 0px auto;
   height: 705px;
   width: 100%;
-  background-color: rgb(220,220,220);
+  background-color: black;
+  opacity: 0.85; 
+  z-index: 2;
 } 
 .second-block table { 
   vertical-align: top;
@@ -267,13 +269,26 @@ a.connect {
   height: 500px; 
   width: 800px;
  }
+  .rocket-engine {
+  background-image: url("rocketIMG.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover; 
+  position: absolute;
+  top: 1650px;
+  height: 1410px;
+  width: 100%;
+  max-width: 100%;
+
+}
 .third-block {
   position: absolute;
   top: 2355px;
   margin: 0px auto;
   height: 705px;
   width: 100%;
-  background-color: rgb(200,200,200);
+  background-color: rgb(40,40,40); 
+  z-index: 2;
 } 
 .third-block table { 
   position: absolute;
