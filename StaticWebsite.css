@@ -180,26 +180,24 @@ img.jet-engine {
   object-fit: contain;
  }
 .second-block {
-  background-image: url("images/engineeringSchool.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 420px 0px;
   position: absolute;
   top: 1590px;
   margin: 0px auto;
   height: 550px;
   width: 100%;
-  box-shadow: 5px 5px 5px grey;
+  background-color: rgb(220,220,220);
 } 
 .second-block table { 
   position: absolute;
+  border: 1px solid black;
   top: 0px;
   text-align: left;
   width: 440px;
   padding-top: 30px;
   padding-left: 115px;
   padding-bottom: 133px;
-  background-color: rgb(20,20,20);
+  background-color: rgb(220,220,220);
+  color: black;
  }
  .second-block table tr:nth-child(1) {
  position: relative;
@@ -241,23 +239,22 @@ img.jet-engine {
   border-radius: 10%;
   height: 45px ;
   width: 155px;
-  border: 1px solid white;
+  border: 1px solid black;
   font-family: Times;
   font-size: 15px;
-  color: white;
+  color: black;
   background-color: transparent; 
   }
   .edu-button:hover { 
   color: black;
   background-color: white; 
   }
-.bottom-block { 
-  position: absolute;
-  top: 480px;
-  background-color: rgb(20,20,20);
-  height: 70px;
-  width: 1100px;
-  z-index: 1;
+.second-block .campus-building { 
+  position: relative;
+  margin: 50px 50px 50px 500px;
+  object-fit: cover; 
+  height: 420px; 
+  width: 600px;
  }
  #fourth-wall {
   background-image: url("images/ccsr.jpeg");
