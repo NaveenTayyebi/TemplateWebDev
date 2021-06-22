@@ -132,6 +132,7 @@ img.jet-engine {
   position: absolute;
   top: 800px;
   background-color: rgb(20,20,20);
+  height: 850px;
   width: 100%;
   margin: 0 auto;
  }
@@ -139,7 +140,7 @@ img.jet-engine {
   display: inline-block;
   vertical-align: top; 
   position: relative;
-  margin: 100px 50px 50px 150px;
+  margin: 105px 50px 50px 150px;
   height: 640px;
   width: 540px;
   border: 1px solid white;
@@ -168,7 +169,7 @@ img.jet-engine {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin: 100px 50px 50px 75px;
+  margin: 115px 50px 50px 75px;
   height: 620px;
   width: 500px;
   background-color: transparent;
@@ -181,61 +182,64 @@ img.jet-engine {
  }
 .second-block {
   position: absolute;
-  top: 1590px;
+  top: 1650px;
   margin: 0px auto;
-  height: 550px;
+  height: 705px;
   width: 100%;
   background-color: rgb(220,220,220);
 } 
 .second-block table { 
-  position: absolute;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: 920px;
   border: 1px solid black;
-  top: 0px;
-  text-align: left;
   width: 440px;
   padding-top: 30px;
   padding-left: 115px;
   padding-bottom: 133px;
+  text-align: left;
   background-color: rgb(220,220,220);
   color: black;
  }
- .second-block table tr:nth-child(1) {
+.second-block table tr:nth-child(1) {
  position: relative;
   font-size: 35px;
   height: 95px;
   left: 30px;
   }
-  .second-block table tr:nth-child(5), tr:nth-child(9) {
+.second-block table tr:nth-child(5), tr:nth-child(9) {
   height: 20px; 
- }
+}
 .icon-one { 
   position: absolute; 
-  left: 40px;
-  bottom: 270px;
+  left: 960px;
+  bottom: 325px;
   height: 60px;
   width: 60px;
   z-index: 3;
  }
- .icon-two { 
+.icon-two { 
   position: absolute; 
-  left: 40px;
-  bottom: 358px;
+  left: 960px;
+  bottom: 413px;
   height: 60px;
   width: 60px;
   z-index: 3;
  }
  .icon-three { 
   position: absolute; 
-  left: 40px;
-  bottom: 183px;
+  left: 960px;
+  bottom: 238px;
   height: 60px;
   width: 60px;
   z-index: 3;
  }
  .edu-button { 
   position: absolute; 
-  bottom: 95px;
-  left: 135px; 
+  bottom: 145px;
+  left: 1075px;
   border-radius: 10%;
   height: 45px ;
   width: 155px;
@@ -249,12 +253,15 @@ img.jet-engine {
   color: black;
   background-color: white; 
   }
-.second-block .campus-building { 
+.second-block .campus-building {
+  vertical-align: top;
+  display: inline-block; 
   position: relative;
-  margin: 50px 50px 50px 500px;
+  top: 100px;
+  right: 400px;
   object-fit: cover; 
-  height: 420px; 
-  width: 600px;
+  height: 500px; 
+  width: 800px;
  }
  #fourth-wall {
   background-image: url("images/ccsr.jpeg");
@@ -262,7 +269,7 @@ img.jet-engine {
   background-size: contain;
   background-position: 420px 0px;
   position: relative;
-  top: 350px;
+  top: 850px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
@@ -345,7 +352,7 @@ img.jet-engine {
   #fifth-wall {
   background-position: 420px 0px;
   position: relative;
-  top: 160px;
+  top: 960px;
   margin: 0px auto ;
   height: 550px;
   width: 1100px;
