@@ -349,7 +349,7 @@ a.connect {
   color: black;
   background-color: transparent; 
   }
-  .edu-button:hover { 
+.edu-button:hover { 
   color: black;
   background-color: white; 
   }
@@ -380,7 +380,7 @@ a.connect {
   color: white;
 }
 #wall  h1 { 
-  font-size: 35px;
+  font-size: 40px;
 }
 #wall  h3 { 
   font-size: 25px;
@@ -389,7 +389,7 @@ a.connect {
   position: relative;
   top: 40px;
   margin: auto;
-  width: 400px;
+  width: 900px;
   color: white;
 }
 #wall .title-table { 
@@ -401,7 +401,7 @@ a.connect {
 #wall button.quote { 
   position: relative;
   top: 80px ;
-  left: 138.25px;
+  left: 90px;
   border-radius: 10%;
   height: 45px ;
   width: 155px;
@@ -420,14 +420,14 @@ a.connect {
   top: 50px;
   margin: auto;
   height: 450px ;
-  width: 450px;
+  width: 900px;
   border: 1px solid white;
-  background-color: rgb(20,20,20);
+  background-color: transparent;
 }
 .bord .form { 
   position: relative;
   top: 40px;
-  left: 60px;
+  left: 280px;
   width: 130px;
   color: white;
   display: none;
@@ -460,10 +460,12 @@ a.connect {
 .bord .form .email { 
     width: 330px;
  }
- .bord .form textarea.comments { 
+ .bord .form textarea.comments {
+    position: relative;
+    left: -195px; 
     margin-top: 2px;
     height: 150px;
-    width: 330px;
+    width: 730px;
     font-family: Times; 
     font-size: 15px;
     resize: none; 
@@ -471,7 +473,7 @@ a.connect {
  #wall .form button.submit {
   position: absolute;
   top: 327px;
-  left: 78px;
+  left: 88px;
   border-radius: 10%;
   height: 45px;
   width: 155px;
