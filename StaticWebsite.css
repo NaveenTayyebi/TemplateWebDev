@@ -342,22 +342,19 @@ a.connect {
   width: 60px;
   z-index: 3;
   }
- .edu-button { 
-  position: absolute; 
-  bottom: 145px;
-  left: 1075px;
-  border-radius: 10%;
-  height: 45px ;
-  width: 155px;
-  border: 1px solid black;
-  font-family: Times;
-  font-size: 15px;
-  color: black;
-  background-color: transparent; 
-  }
-.edu-button:hover { 
-  color: black;
+.third-block button {
+  position: relative;
+  top: -280px;
+  margin: 0px auto ;
+  height: 50px;
+  width: 175px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white
+ }
+ .third-block button:hover  { 
   background-color: white; 
+  color: black;
   }
 .third-block .campus-building {
   vertical-align: top;
