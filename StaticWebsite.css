@@ -92,7 +92,7 @@ a.connect {
   z-index: 2;
 }
 .rocket-engine {
-  background-image: url("rocketIMG.jpeg");
+  background-image: url("images/rocketIMG.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover; 
