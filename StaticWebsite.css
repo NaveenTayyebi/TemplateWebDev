@@ -350,7 +350,9 @@ a.connect {
   width: 175px;
   color: white;
   background-color: transparent;
-  border: 1px solid white
+  border: 1px solid white;
+  z-index: 4;
+  /*text-decoration: none;*/
  }
  .third-block button:hover  { 
   background-color: white; 
